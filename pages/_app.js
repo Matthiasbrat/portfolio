@@ -1,5 +1,9 @@
-import '@/styles/globals.css'
+import global_style from '../styles/global.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App() {
+	return (
+		<div>
+			<h1>Portfolio</h1>
+		</div>
+	);
 }
