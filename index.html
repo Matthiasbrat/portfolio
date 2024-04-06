@@ -5,58 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthias Brat</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            margin: 4rem 0 0;
-            height: 200%;
-        }
-
-        img {
-            position: absolute;
-        }
-
-        .modules {
-            width: 10rem;
-            height: 1rem;
-            position: relative;
-            top: 61.3em;
-            left: 27em;
-        }
-
-        .bomba {
-            width: 38rem;
-            height: 1rem;
-            position: relative;
-            top: 83.1em;
-            left: 17em;
-        }
-
-        .learn {
-            width: 20rem;
-            height: 1rem;
-            position: relative;
-            top: 93.9em;
-            left: -21em;
-        }
-
-        @media screen and (max-width: 1295px){
-            img {
-                width: 100%;
-            }
-            body {
-                margin: 0;
-            }
-        }
-    </style>
 </head>
 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    iframe {
+        border: none;
+    }
+</style>
+
 <body>
-    <img src="https://github.com/Matthiasbrat/images/blob/main/cv.png?raw=true" alt="Matthias brat CV" draggable="false" />
-        <a href="https://www.modulbaukasten.ch/?d=4f50e7f3-6b82-eb11-a812-0022486f6f83" target="_blank" class="modules"></a>
-        <a href="https://github.com/macawls/bomba-api" class="bomba"></a>
-        <a href="https://github.com/matthiasbrat/learn-fast" class="learn"></a>
+    <iframe
+        src='https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/Matthiasbrat/portfolio/main/resume.docx'
+        width='100%' height='1000' frameborder='0'>This is an embedded.</iframe>
 </body>
+
+<script>
+    const iframe = document.querySelector('iframe');
+    iframe.style.height = window.innerHeight + 'px';
+    iframe.style.width = window.innerWidth + 'px';
+    window.addEventListener('resize', () => {
+        iframe.style.height = window.innerHeight + 'px';
+        iframe.style.width = window.innerWidth + 'px';
+    });
+</script>
 
 </html>
