@@ -13,38 +13,44 @@
             height: 200%;
         }
 
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+        }
+
         img {
+            width: 100%;
+            height: auto;
+        }
+
+        .modules, .bomba, .learn, .final {
             position: absolute;
+            background-color: rgba(255, 0, 0, 0.5); /* For visibility, adjust as needed */
         }
 
         .modules {
-            width: 10rem;
+            width: 13%;
             height: 1rem;
-            position: relative;
-            top: 61.3em;
-            left: 27em;
+            top: 38.2%;
+            left: 42.5%;
         }
 
-        .bomba {
-            width: 38rem;
+        .final {
+            width: 8%;
             height: 1rem;
-            position: relative;
-            top: 83.1em;
-            left: 17em;
+            top: 41.1%;
+            left: 42.5%;
         }
 
         .learn {
-            width: 20rem;
+            width: 32%;
             height: 1rem;
-            position: relative;
-            top: 93.9em;
-            left: -21em;
+            top: 51.9%;
+            left: 39%;
         }
 
-        @media screen and (max-width: 1295px){
-            img {
-                width: 100%;
-            }
+        @media screen and (max-width: 1295px) {
             body {
                 margin: 0;
             }
@@ -53,10 +59,12 @@
 </head>
 
 <body>
-    <img src="https://github.com/Matthiasbrat/images/blob/main/my_resume.png?raw=true" alt="Matthias brat CV" draggable="false" />
+    <div class="image-container">
+        <img src="https://github.com/Matthiasbrat/images/blob/main/my_resume.png?raw=true" alt="Matthias brat CV" draggable="false" />
         <a href="https://www.modulbaukasten.ch/?d=4f50e7f3-6b82-eb11-a812-0022486f6f83" target="_blank" class="modules"></a>
-        <a href="https://github.com/macawls/bomba-api" class="bomba"></a>
         <a href="https://github.com/matthiasbrat/learn-fast" class="learn"></a>
+        <a href="https://github.com/Matthiasbrat/final/raw/refs/heads/main/EN_Trimmed_Report_Brat_Matthias_v2.pdf" class="final"></a>
+    </div>
 </body>
 
 </html>
