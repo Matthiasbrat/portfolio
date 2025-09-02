@@ -1,86 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthias Brat</title>
+    <title>My Resume</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            margin: 4rem 0 0;
-            height: 200%;
-        }
-
-        .image-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px; /* Adjust as needed */
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .modules, .devops, .learn, .final, .feedback {
-            position: absolute;
-        }
-
-        .modules {
-            width: 13%;
-            height: 1rem;
-            top: 44.9%;
-            left: 42.5%;
-        }
-
-        .final {
-            width: 8%;
-            height: 1rem;
-            top: 47.81%;
-            left: 42.5%;
-        }
-
-        .learn {
-            width: 32%;
-            height: 1rem;
-            top: 55.4%;
-            left: 39%;
-        }
-
-        .devops {
-            width: 30%;
-            height: 1rem;
-            top: 21.5%;
-            left: 42.5%;
-        }
-
-        <!-- .feedback { -->
-            <!-- width: 7%; -->
-            <!-- height: 1rem; -->
-            <!-- top: 27.6%; -->
-            <!-- left: 43.3%; -->
-			<!-- background-color: rgba(0, 255, 255, .1); -->
-        <!-- } -->
-
-        @media screen and (max-width: 1295px) {
-            body {
-                margin: 0;
-            }
-        }
+        body { margin: 0; padding: 0; }
+        iframe { width: 100vw; height: 100vh; border: none; }
     </style>
 </head>
-
 <body>
-    <div class="image-container">
-        <img src="https://github.com/Matthiasbrat/portfolio/blob/main/resume.png?raw=true" alt="Matthias brat CV" draggable="false" />
-        <a href="https://www.modulbaukasten.ch/?d=4f50e7f3-6b82-eb11-a812-0022486f6f83" target="_blank" class="modules"></a>
-        <a href="https://github.com/matthiasbrat/learn-fast" target="_blank" class="learn"></a>
-        <a href="https://github.com/matthiasbrat/final" target="_blank" class="final"></a>
-        <a href="https://github.com/Matthiasbrat/certs/blob/main/feedback.pdf" target="_blank" class="feedback"></a>
-        <a href="https://www.bruxellesformation.brussels/catalogue-dorifor/devops-engineer-avec-certification-kubernetes/" target="_blank" class="devops"></a>
-    </div>
+    <iframe src="resume.pdf"></iframe>
 </body>
-
 </html>
